@@ -98,7 +98,7 @@ public class SistemaAmigo {
         } else{
             List<Amigo> amigosNãoSorteados = new ArrayList<>(this.amigos);
             List<Amigo> amigosJaSorteados = new ArrayList<>();
-
+            //a
 
             for(Amigo a: this.amigos){
                 Amigo amigoSorteado;

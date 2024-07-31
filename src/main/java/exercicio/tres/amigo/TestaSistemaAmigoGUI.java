@@ -33,7 +33,7 @@ public class TestaSistemaAmigoGUI {
       for(Mensagem m: sistema.pesquisaTodasAsMensagens()){
           System.out.println(m.getTextoCompletoAExibir());
       }
-
+        //a
 
 
 
