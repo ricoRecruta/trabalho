@@ -90,4 +90,28 @@ public class SistemaAmigo {
     }
 
 
+    // Parte do código a ser alterada
+    public void sortear() throws IllegalAccessException {
+        //TODO: verifcar se está dando certo.
+        if(this.amigos.size() < 2){
+            throw new IllegalAccessException("É nescessário pelo menos 2 pessoas para poder realizar o sorteio");
+        } else{
+            List<Amigo> amigosNãoSorteados = new ArrayList<>(this.amigos);
+            List<Amigo> amigosJaSorteados = new ArrayList<>();
+
+
+            for(Amigo a: this.amigos){
+                Amigo amigoSorteado;
+                do{
+                amigoSorteado = amigosNãoSorteados.remove((int) (Math.random()*amigosNãoSorteados.size()));
+                } while(amigoSorteado.getEmail().equals(a.getEmail()));
+                {
+                    a.setEmailAmigoSorteado(amigoSorteado.getEmail());
+                }
+
+            }
+        }
+    }
+
+
 }
