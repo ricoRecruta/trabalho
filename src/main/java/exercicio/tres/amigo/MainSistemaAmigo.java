@@ -5,8 +5,13 @@ import java.util.List;
 public class MainSistemaAmigo {
     public static void main(String[] args){
         SistemaAmigo sistemaJoao = new SistemaAmigo();
-            sistemaJoao.cadastraAmigo("José","josé@email.com");
-            sistemaJoao.cadastraAmigo("Maria","maria@email.com");
+            try{
+                sistemaJoao.cadastraAmigo("José","josé@email.com");
+                sistemaJoao.cadastraAmigo("Maria","maria@email.com");
+
+            } catch(AmigoJaExisteException e){
+                System.out.println(e.getMessage());
+            }
 
             try{
                 sistemaJoao.configuraAmigoSecretoDe("josé@email.com","maria@email.com");

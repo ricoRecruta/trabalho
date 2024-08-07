@@ -6,9 +6,15 @@ public class TestaSistemaAmigoGUI {
       int quant = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade de amigos a casastrar"));
 
       for(int i = 0; i<quant; i++){
-          String nome = JOptionPane.showInputDialog("Qual o nome do amigo");
-          String email = JOptionPane.showInputDialog("Qual é o seu email? ");
-          sistema.cadastraAmigo(nome,email);
+          try{
+              String nome = JOptionPane.showInputDialog("Qual o nome do amigo");
+              String email = JOptionPane.showInputDialog("Qual é o seu email? ");
+              sistema.cadastraAmigo(nome,email);
+
+          } catch (AmigoJaExisteException e){
+              System.out.println(e.getMessage());
+          }
+
       }
       System.out.println("Todos os amigos ja foram criados");
 

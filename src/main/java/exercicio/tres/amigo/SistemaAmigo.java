@@ -13,18 +13,28 @@ public class SistemaAmigo {
         amigos = new ArrayList<>();
     }
 
-    public void cadastraAmigo(String nomeAmigo, String emailAmigo){
-        Amigo a = new Amigo(nomeAmigo, emailAmigo);
-        amigos.add(a);
+    public void cadastraAmigo(String nomeAmigo, String emailAmigo) throws AmigoJaExisteException{
+        int cont = 0;
+        for(Amigo a: this.amigos){
+            if(a.getEmail().equalsIgnoreCase(emailAmigo)){ cont++ ;}
+        }
+        if(cont > 0){
+            throw  new AmigoJaExisteException("Ja existe amigo com esse email ");
+        } else {
+            Amigo a = new Amigo(nomeAmigo, emailAmigo);
+            amigos.add(a);
+        }
+
     }
 
-    public Amigo pesquisaAmigo( String emailAmigo){
+    public Amigo pesquisaAmigo( String emailAmigo) throws AmigoInexistenteException {
+        Amigo teste;
         for(Amigo a: this.amigos){
-            if(a.getEmailAmigoSorteado().equalsIgnoreCase(emailAmigo)){
+            if(a.getEmail().equalsIgnoreCase(emailAmigo)){
                 return a;
             }
         }
-        return null;
+       throw new AmigoInexistenteException("O amigo cuja o email foi passado não existe");
     }
 
     public void enviarMensagemParaTodos(String texto,String emailRemetente,boolean ehAnonima){

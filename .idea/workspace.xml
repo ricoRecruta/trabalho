@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9fb8fc2-9e76-4848-b56f-2dec44ba94f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exercicio/tres/amigo/TestaSistemaAmigoGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exercicio/tres/amigo/AmigoJaExisteException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exercicio/tres/amigo/SistemaAmigoMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exercicio/tres/amigo/SistemaAmigoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exercicio/tres/amigo/SistemaAmigoTestMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exercicio/tres/amigo/MainSistemaAmigo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exercicio/tres/amigo/MainSistemaAmigo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/exercicio/tres/amigo/SistemaAmigo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exercicio/tres/amigo/SistemaAmigo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exercicio/tres/amigo/TestaSistemaAmigoGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exercicio/tres/amigo/TestaSistemaAmigoGUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +42,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.TestaSistemaAmigoGUI.executor": "Run",
+    "JUnit.SistemaAmigoTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -45,7 +52,7 @@
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SistemaAmigoTest">
     <configuration name="TestaSistemaAmigoGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exercicio.tres.amigo.TestaSistemaAmigoGUI" />
       <module name="untitled12" />
@@ -59,8 +66,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SistemaAmigoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled12" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercicio.tres.amigo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="exercicio.tres.amigo" />
+      <option name="MAIN_CLASS_NAME" value="exercicio.tres.amigo.SistemaAmigoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SistemaAmigoTestMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled12" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercicio.tres.amigo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="exercicio.tres.amigo" />
+      <option name="MAIN_CLASS_NAME" value="exercicio.tres.amigo.SistemaAmigoTestMap" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SistemaAmigoTest" />
+        <item itemvalue="JUnit.SistemaAmigoTestMap" />
         <item itemvalue="Application.TestaSistemaAmigoGUI" />
       </list>
     </recent_temporary>
@@ -75,16 +114,5 @@
       <updated>1721880588292</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/exercicio/tres/amigo/TestaSistemaAmigoGUI.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
